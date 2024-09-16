@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "sht40_temperature_project",
-    "project_version":    "7a48111-dirty",
+    "project_version":    "2737dcd-dirty",
     "project_path":       "/home/maxim/ESP32-S3_temperature",
     "idf_path":           "/home/maxim/esp/esp-idf",
     "build_dir":          "/home/maxim/ESP32-S3_temperature/build",

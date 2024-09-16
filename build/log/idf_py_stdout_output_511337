@@ -1,0 +1,195 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (27) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 16 2024 16:11:10[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b704h ( 46852) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001b72c vaddr=3fc93800 size=02a74h ( 10868) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001e1a8 vaddr=40374000 size=01e70h (  7792) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=19f7ch (106364) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00039fa4 vaddr=40375e70 size=0d924h ( 55588) load[0m
+[0;32mI (162) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) app_init: Application information:[0m
+[0;32mI (187) app_init: Project name:     sht40_temperature_project[0m
+[0;32mI (193) app_init: App version:      2737dcd-dirty[0m
+[0;32mI (198) app_init: Compile time:     Sep 16 2024 16:11:03[0m
+[0;32mI (204) app_init: ELF file SHA256:  d173b26c8...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (219) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (224) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (236) heap_init: At 3FC96B40 len 00052BD0 (330 KiB): RAM[0m
+[0;32mI (242) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (248) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (262) spi_flash: detected chip: generic[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (283) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (293) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (300) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (308) main_task: Started on CPU0[0m
+[0;32mI (318) main_task: Calling app_main()[0m
+[0;32mI (318) SHT40_APP: Initializing I2C...[0m
+[0;32mI (318) SHT40_APP: SHT40 initialized successfully[0m
+[0;32mI (338) SHT40_APP: Temperature: 25.18°C[0m
+[0;32mI (2348) SHT40_APP: Temperature: 25.19°C[0m
+[0;32mI (4358) SHT40_APP: Temperature: 25.21°C[0m
+[0;32mI (6368) SHT40_APP: Temperature: 26.21°C[0m
+[0;32mI (8378) SHT40_APP: Temperature: 26.81°C[0m
+[0;32mI (10388) SHT40_APP: Temperature: 26.61°C[0m
+[0;32mI (12398) SHT40_APP: Temperature: 27.08°C[0m
+[0;32mI (14408) SHT40_APP: Temperature: 27.44°C[0m
+[0;32mI (16418) SHT40_APP: Temperature: 27.54°C[0m
+[0;32mI (18428) SHT40_APP: Temperature: 28.37°C[0m
+[0;32mI (20438) SHT40_APP: Temperature: 28.22°C[0m
+[0;32mI (22448) SHT40_APP: Temperature: 27.98°C[0m
+[0;32mI (24458) SHT40_APP: Temperature: 27.25°C[0m
+[0;32mI (26468) SHT40_APP: Temperature: 26.58°C[0m
+[0;32mI (28478) SHT40_APP: Temperature: 26.14°C[0m
+[0;32mI (30488) SHT40_APP: Temperature: 25.91°C[0m
+[0;32mI (32498) SHT40_APP: Temperature: 25.88°C[0m
+[0;32mI (34508) SHT40_APP: Temperature: 25.85°C[0m
+[0;32mI (36518) SHT40_APP: Temperature: 25.82°C[0m
+[0;32mI (38528) SHT40_APP: Temperature: 25.79°C[0m
+[0;32mI (40538) SHT40_APP: Temperature: 25.74°C[0m
+[0;32mI (42548) SHT40_APP: Temperature: 25.71°C[0m
+[0;32mI (44558) SHT40_APP: Temperature: 25.70°C[0m
+[0;32mI (46568) SHT40_APP: Temperature: 25.67°C[0m
+[0;32mI (48578) SHT40_APP: Temperature: 25.60°C[0m
+[0;32mI (50588) SHT40_APP: Temperature: 25.57°C[0m
+[0;32mI (52598) SHT40_APP: Temperature: 25.57°C[0m
+[0;32mI (54608) SHT40_APP: Temperature: 25.52°C[0m
+[0;32mI (56618) SHT40_APP: Temperature: 25.48°C[0m
+[0;32mI (58628) SHT40_APP: Temperature: 25.47°C[0m
+[0;32mI (60638) SHT40_APP: Temperature: 25.45°C[0m
+[0;32mI (62648) SHT40_APP: Temperature: 25.42°C[0m
+[0;32mI (64658) SHT40_APP: Temperature: 25.42°C[0m
+[0;32mI (66668) SHT40_APP: Temperature: 25.41°C[0m
+[0;32mI (68678) SHT40_APP: Temperature: 25.40°C[0m
+[0;32mI (70688) SHT40_APP: Temperature: 25.37°C[0m
+[0;32mI (72698) SHT40_APP: Temperature: 25.36°C[0m
+[0;32mI (74708) SHT40_APP: Temperature: 25.32°C[0m
+[0;32mI (76718) SHT40_APP: Temperature: 25.31°C[0m
+[0;32mI (78728) SHT40_APP: Temperature: 25.30°C[0m
+[0;32mI (80738) SHT40_APP: Temperature: 25.31°C[0m
+[0;32mI (82748) SHT40_APP: Temperature: 25.27°C[0m
+[0;32mI (84758) SHT40_APP: Temperature: 25.26°C[0m
+[0;32mI (86768) SHT40_APP: Temperature: 25.23°C[0m
+[0;32mI (88778) SHT40_APP: Temperature: 25.22°C[0m
+[0;32mI (90788) SHT40_APP: Temperature: 25.19°C[0m
+[0;32mI (92798) SHT40_APP: Temperature: 25.18°C[0m
+[0;32mI (94808) SHT40_APP: Temperature: 25.18°C[0m
+[0;32mI (96818) SHT40_APP: Temperature: 25.14°C[0m
+[0;32mI (98828) SHT40_APP: Temperature: 25.15°C[0m
+[0;32mI (100838) SHT40_APP: Temperature: 25.15°C[0m
+[0;32mI (102848) SHT40_APP: Temperature: 25.10°C[0m
+[0;32mI (104858) SHT40_APP: Temperature: 25.08°C[0m
+[0;32mI (106868) SHT40_APP: Temperature: 25.09°C[0m
+[0;32mI (108878) SHT40_APP: Temperature: 25.05°C[0m
+[0;32mI (110888) SHT40_APP: Temperature: 25.05°C[0m
+[0;32mI (112898) SHT40_APP: Temperature: 25.01°C[0m
+[0;32mI (114908) SHT40_APP: Temperature: 25.00°C[0m
+[0;32mI (116918) SHT40_APP: Temperature: 25.02°C[0m
+[0;32mI (118928) SHT40_APP: Temperature: 25.00°C[0m
+[0;32mI (120938) SHT40_APP: Temperature: 24.99°C[0m
+[0;32mI (122948) SHT40_APP: Temperature: 24.98°C[0m
+[0;32mI (124958) SHT40_APP: Temperature: 24.97°C[0m
+[0;32mI (126968) SHT40_APP: Temperature: 25.00°C[0m
+[0;32mI (128978) SHT40_APP: Temperature: 25.00°C[0m
+[0;32mI (130988) SHT40_APP: Temperature: 24.98°C[0m
+[0;32mI (132998) SHT40_APP: Temperature: 24.98°C[0m
+[0;32mI (135008) SHT40_APP: Temperature: 25.01°C[0m
+[0;32mI (137018) SHT40_APP: Temperature: 25.00°C[0m
+[0;32mI (139028) SHT40_APP: Temperature: 25.01°C[0m
+[0;32mI (141038) SHT40_APP: Temperature: 25.00°C[0m
+[0;32mI (143048) SHT40_APP: Temperature: 25.02°C[0m
+[0;32mI (145058) SHT40_APP: Temperature: 25.05°C[0m
+[0;32mI (147068) SHT40_APP: Temperature: 25.05°C[0m
+[0;32mI (149078) SHT40_APP: Temperature: 25.06°C[0m
+[0;32mI (151088) SHT40_APP: Temperature: 25.08°C[0m
+[0;32mI (153098) SHT40_APP: Temperature: 25.09°C[0m
+[0;32mI (155108) SHT40_APP: Temperature: 25.10°C[0m
+[0;32mI (157118) SHT40_APP: Temperature: 25.09°C[0m
+[0;32mI (159128) SHT40_APP: Temperature: 25.11°C[0m
+[0;32mI (161138) SHT40_APP: Temperature: 25.10°C[0m
+[0;32mI (163148) SHT40_APP: Temperature: 25.10°C[0m
+[0;32mI (165158) SHT40_APP: Temperature: 25.10°C[0m
+[0;32mI (167168) SHT40_APP: Temperature: 25.11°C[0m
+[0;32mI (169178) SHT40_APP: Temperature: 25.09°C[0m
+[0;32mI (171188) SHT40_APP: Temperature: 25.06°C[0m
+[0;32mI (173198) SHT40_APP: Temperature: 25.05°C[0m
+[0;32mI (175208) SHT40_APP: Temperature: 25.06°C[0m
+[0;32mI (177218) SHT40_APP: Temperature: 25.03°C[0m
+[0;32mI (179228) SHT40_APP: Temperature: 24.99°C[0m
+[0;32mI (181238) SHT40_APP: Temperature: 24.95°C[0m
+[0;32mI (183248) SHT40_APP: Temperature: 24.93°C[0m
+[0;32mI (185258) SHT40_APP: Temperature: 24.88°C[0m
+[0;32mI (187268) SHT40_APP: Temperature: 24.86°C[0m
+[0;32mI (189278) SHT40_APP: Temperature: 24.85°C[0m
+[0;32mI (191288) SHT40_APP: Temperature: 24.84°C[0m
+[0;32mI (193298) SHT40_APP: Temperature: 24.86°C[0m
+[0;32mI (195308) SHT40_APP: Temperature: 24.81°C[0m
+[0;32mI (197318) SHT40_APP: Temperature: 24.79°C[0m
+[0;32mI (199328) SHT40_APP: Temperature: 24.79°C[0m
+[0;32mI (201338) SHT40_APP: Temperature: 24.82°C[0m
+[0;32mI (203348) SHT40_APP: Temperature: 24.82°C[0m
+[0;32mI (205358) SHT40_APP: Temperature: 24.83°C[0m
+[0;32mI (207368) SHT40_APP: Temperature: 24.82°C[0m
+[0;32mI (209378) SHT40_APP: Temperature: 24.84°C[0m
+[0;32mI (211388) SHT40_APP: Temperature: 24.82°C[0m
+[0;32mI (213398) SHT40_APP: Temperature: 24.85°C[0m
+[0;32mI (215408) SHT40_APP: Temperature: 24.84°C[0m
+[0;32mI (217418) SHT40_APP: Temperature: 24.85°C[0m
+[0;32mI (219428) SHT40_APP: Temperature: 24.87°C[0m
+[0;32mI (221438) SHT40_APP: Temperature: 24.88°C[0m
+[0;32mI (223448) SHT40_APP: Temperature: 24.88°C[0m
+[0;32mI (225458) SHT40_APP: Temperature: 24.88°C[0m
+[0;32mI (227468) SHT40_APP: Temperature: 24.90°C[0m
+[0;32mI (229478) SHT40_APP: Temperature: 24.90°C[0m
+[0;32mI (231488) SHT40_APP: Temperature: 24.89°C[0m
+[0;32mI (233498) SHT40_APP: Temperature: 24.88°C[0m
+[0;32mI (235508) SHT40_APP: Temperature: 24.91°C[0m
+[0;32mI (237518) SHT40_APP: Temperature: 24.91°C[0m
+[0;32mI (239528) SHT40_APP: Temperature: 24.92°C[0m
+[0;32mI (241538) SHT40_APP: Temperature: 24.93°C[0m
+[0;32mI (243548) SHT40_APP: Temperature: 24.94°C[0m
+[0;32mI (245558) SHT40_APP: Temperature: 24.95°C[0m
+[0;32mI (247568) SHT40_APP: Temperature: 24.94°C[0m
+[0;32mI (249578) SHT40_APP: Temperature: 24.92°C[0m
+[0;32mI (251588) SHT40_APP: Temperature: 24.94°C[0m
+[0;32mI (253598) SHT40_APP: Temperature: 24.97°C[0m
+[0;32mI (255608) SHT40_APP: Temperature: 24.96°C[0m
+[0;32mI (257618) SHT40_APP: Temperature: 24.97°C[0m
+[0;32mI (259628) SHT40_APP: Temperature: 24.98°C[0m
+[0;32mI (261638) SHT40_APP: Temperature: 24.97°C[0m
+[0;32mI (263648) SHT40_APP: Temperature: 24.95°C[0m
+[0;32mI (265658) SHT40_APP: Temperature: 24.97°C[0m
+[0;32mI (267668) SHT40_APP: Temperature: 24.98°C[0m
+[0;32mI (269678) SHT40_APP: Temperature: 24.99°C[0m
+[0;32mI (271688) SHT40_APP: Temperature: 24.98°C[0m
+[0;32mI (273698) SHT40_APP: Temperature: 24.97°C[0m
